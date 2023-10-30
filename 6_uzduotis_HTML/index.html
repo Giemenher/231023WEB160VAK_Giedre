@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>6 užduotis HTML</title>
+  </head>
+  <body>
+    <form action="apklausa">
+      <fieldset>
+        <legend>Jūsų informacija</legend>
+        <label for="vardas">Vardas:</label>
+        <input type="text" id="vardas" name="vardas" /><br /><br />
+
+        <label for="Pavarde">Pavardė:</label>
+        <input type="text" id="pavarde" name="pavarde" />
+      </fieldset>
+    </form>
+    <!-- labai svarbu,kad forma apgauptų visus klausimus, nes duomenys bus siunčiami tik tie, kurie įeina į formą, jeigu išskaidyta, tai turi būti tiek siuntimo mygtukų, kiek yra formų -->
+    <fieldset>
+      <legend>Klausimai</legend>
+      <label for="saltiniai">Kaip sužinojote apie mus?</label>
+      <select name="saltiniai" id="saltiniai">
+        <option value="Google">Google</option>
+        <option value="Facebook">Facebook</option>
+        <option value="Instagram">Instagram</option>
+        <option value="kita">Kita</option>
+      </select>
+      <p>Ar apsilankysite vėl?:</p>
+      <input type="radio" id="taip" name="atsakymas" value="Taip" />
+      <label for="html">Taip</label>
+      <input type="radio" id="Ne" name="atsakymas" value="Ne" />
+      <label for="css">Ne</label>
+      <input type="radio" id="Galbut" name="atsakymas" value="Galbut" />
+      <label for="galbut">Galbūt</label>
+      <form action="tekstolaukas">
+        <p>Ką manote apie kursą?:</p>
+        <textarea
+          id="nuomone"
+          name="nuomone"
+          rows="10"
+          cols="60"
+          placeholder="Rašykite viską ką galvojate"
+        ></textarea>
+        <p>
+          Pažymėkite programavimo/žymėjimo kalbas, su kuriomis esate susipažinę:
+        </p>
+        <br />
+        <input type="checkbox" id="C" name="kalba" value="C" />
+        <label for="kalba"> C#</label>
+
+        <input type="checkbox" id="kalba2" name="kalba2" value="java" />
+        <label for="kalba2"> Java</label>
+
+        <input type="checkbox" id="kalba3" name="kalba3" value="php" />
+        <label for="kalba3"> PHP</label><br />
+
+        <input type="checkbox" id="C" name="kalba4" value="html" />
+        <label for="kalba4">HTML</label>
+
+        <input type="checkbox" id="kalba5" name="kalba5" value="css" />
+        <label for="kalba5"> CSS</label>
+
+        <input type="checkbox" id="kalba6" name="kalba6" value="javascript" />
+        <label for="kalba6"> Javascript</label><br />
+
+        <input type="checkbox" id="kalba7" name="kalba7" value="python" />
+        <label for="kalba7"> Python</label>
+
+        <input type="checkbox" id="kalba8" name="kalba8" value="ruby" />
+        <label for="kalba8"> Ruby</label><br />
+        <br /><br />
+        <button>Siųsti</button>
+      </form>
+      <!-- <input type="submit" value="Siųsti"  Formos duomenims siųsti naudoti button tagą, o ne input tagą/> -->
+    </fieldset>
+  </body>
+</html>

@@ -1,0 +1,22 @@
+body {
+    font-family: Arial, Helvetica, sans-serif;
+}
+h1 {
+    color: #b94141; 
+}
+h2 {
+    color: #b94141;
+}
+.p2 {
+    color: #962755;
+    
+}
+.kursyvas {
+    font-style: italic;
+}
+#gele1 {
+    font-size: large;
+    font-style: italic;
+    color: aqua;
+    font-weight: 1000;
+}

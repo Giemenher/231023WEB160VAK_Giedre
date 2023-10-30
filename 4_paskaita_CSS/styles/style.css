@@ -1,0 +1,64 @@
+* {
+  box-sizing: border-box;
+}
+
+.center-wrapper {
+  width: 70%;
+  margin: 0 auto;
+}
+h1 {
+  border: 30px dashed red;
+  padding: 20px;
+  margin: 20px 0 20px 0;
+  background-color: beige;
+  text-align: center;
+  font-size: 50px;
+  font-family: sans-serif;
+  color: red;
+}
+div.wrapper {
+  font-size: 0px;
+}
+div.side-menu,
+div.bendras {
+  display: inline-block;
+  padding: 20px;
+  vertical-align: top;
+}
+
+div.side-menu {
+  width: 25%;
+  background-color: rgb(85, 134, 134);
+}
+
+div.bendras {
+  width: 75%;
+  background-color: rgb(220, 202, 179);
+}
+div.side-menu ul {
+  padding: 0px;
+  list-style-type: none;
+}
+ul li {
+  font-size: 16px;
+}
+
+h2 {
+  font-size: 32px;
+}
+
+p {
+  font-size: 20px;
+}
+
+div.bendras h2 {
+  margin-top: 0;
+}
+
+div.bendras p {
+  margin-bottom: 0;
+}
+
+.article-thumbnail {
+  width: 100%;
+}

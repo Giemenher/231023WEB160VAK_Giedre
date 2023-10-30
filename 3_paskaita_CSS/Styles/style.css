@@ -1,0 +1,48 @@
+body {
+  background-color: bisque;
+}
+
+/* elemento selector */
+h1 {
+  color: blue;
+}
+
+h1:hover {
+  color: yellow;
+}
+
+/* kombinuotas klasės ir elemento selector */
+h1.raudonas {
+  color: #ea7c7c;
+}
+h1.raudonas:hover {
+  color: #9cc310;
+}
+/* kažko selector */
+p.raudonas {
+  color: #861313;
+  font-weight: bold;
+}
+/* id selector */
+#main-title {
+  color: green;
+  background-color: black;
+}
+
+h2.sub-title.zalia {
+  text-align: center;
+  font-size: 32px;
+  color: brown;
+}
+
+table p {
+  font-size: 10px;
+}
+table,
+th,
+td {
+  border: 3px solid #0c772c;
+}
+.kursyvas {
+  font-style: italic;
+}
