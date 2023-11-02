@@ -1,0 +1,56 @@
+.wrapper {
+  position: relative;
+  margin: 0 auto;
+  width: 1000px;
+  background-color: #a0a0a4;
+  padding: 100px;
+}
+
+.slide {
+  margin: 0 auto;
+  width: 100%;
+  position: relative;
+  /* height: 1000px; */
+  background-color: rgb(60, 59, 59);
+  overflow: hidden;
+}
+
+.image {
+  width: 100%;
+  height: 100%;
+}
+  .overlay { 
+    background-color: rgba(9, 8, 8, 0.8);
+    position: relative;
+    width: 100%;
+    Height: 100%
+     }
+
+h1 {
+  position: absolute;
+  /* left: 100px;
+    top: 300px; */
+  color: aliceblue;
+  right: 50%;
+  bottom: 50%;
+  margin: 0;
+  transform: translate (-50%, -50%);
+}
+
+
+
+p {
+    font-size: 32px;
+}
+
+.menu {
+    background-color: grey;
+    padding: 20px;
+    position: fixed;
+    top: 0px;
+    left: 0px;
+    width: 100%;
+}
+.menu h2 {
+    margin: 0;
+}
