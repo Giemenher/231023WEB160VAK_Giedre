@@ -1,0 +1,110 @@
+* {
+    box-sizing: border-box;
+}
+body {
+  background-color: #626261;
+  margin: 0;
+  padding: 10px;
+  color: beige;
+}
+.container {
+  display: grid;
+  grid-template-columns: 1fr 3fr 1fr;
+  grid-template-rows: auto auto auto;
+  grid-template-areas:
+    "header header header"
+    "side content side2"
+    "footer footer footer";
+  background-color: #c9c9c9;
+  width: 90%;
+  margin: 0 auto;
+  grid-gap: 10px;
+  padding: 10px;
+}
+
+.header {
+  background-color: #656565;
+  grid-area: header;
+  /* grid-column: span 2; */
+}
+
+.sidemenu {
+  background-color: #262626;
+  grid-area: side;
+  /* grid-row: span 3; */
+}
+
+.sidemenu2 {
+    background-color: #262626;
+    grid-area: side2;
+    /* grid-row: span 3; */
+  }
+.content {
+  background-color: #262626;
+  grid-area: content;
+}
+
+.footer {
+  background-color:#656565;
+  grid-area: footer;
+  /* grid-column: span 2; */
+}
+
+.container div {
+  padding: 5px;
+  /* border: solid;
+  border-color: #c9c9c9; */
+  border-radius: 5px ;
+} 
+
+@media only screen and (max-width:  1199px) {
+    body {
+      background-color: black;
+    }
+  
+    .container {
+     
+      grid-template-columns: 1fr 3fr;
+      grid-template-rows: auto auto 150px auto;
+      grid-template-areas:
+        "header header header"
+        "side content content"
+        "side2  side2 side2 "
+        "footer footer footer";
+      background-color: #fafafa;
+      width: 100%;
+      margin: 0 auto;
+      grid-gap: 10px;
+      padding: 10px;
+    }
+
+    .sidemenu2 {
+        background-color: #afaeae;
+    }
+  
+  }
+  
+  @media only screen and (max-width: 768px )
+   {
+      body {
+        background-color: rgb(78, 5, 5);
+      }
+    
+      .container {
+       
+        grid-template-columns: 1fr;
+        grid-template-rows: auto 100px auto 100px auto;
+        grid-template-areas:
+        "header"
+        "side "
+        "content"
+        "side2 "
+        "footer";
+      background-color: #fafafa;         
+        width: 100%;
+        margin: 0 auto;
+        grid-gap: 5px;
+        padding: 5px;
+      }
+    
+    }
