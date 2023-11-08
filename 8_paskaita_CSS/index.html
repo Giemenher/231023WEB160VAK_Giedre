@@ -1,0 +1,124 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+    <link
+      href="https://fonts.googleapis.com/icon?family=Material+Icons"
+      rel="stylesheet"
+    />
+
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/css/materialize.min.css"
+    />
+
+    <link rel="stylesheet" href="styles/style.css" />
+    <title>8 CSS</title>
+  </head>
+
+  <body class="yellow ligthen-5">
+
+    <div class="container">
+    <h1 class="orange lighten-3 orange-text text-darken-4 center-align">
+      8 CSS paskaita!
+    </h1>
+
+    <a class="waves-effect waves-light btn-large orange"
+      ><i class="material-icons left">cloud</i>button</a
+    >
+  
+      <table>
+        <tr>
+          <th>Name</th>
+          <th>Item Name</th>
+          <th>Item Price</th>
+        </tr>
+
+        <tr>
+          <td>Alvin</td>
+          <td>Eclair</td>
+          <td>$0.87</td>
+        </tr>
+        <tr>
+          <td>Alan</td>
+          <td>Jellybean</td>
+          <td>$3.76</td>
+        </tr>
+        <tr>
+          <td>Jonathan</td>
+          <td>Lollipop</td>
+          <td>$7.00</td>
+        </tr>
+      </table>
+
+      <ul class="collapsible">
+        <li>
+          <div class="collapsible-header">
+            <i class="material-icons">filter_drama</i>First
+          </div>
+          <div class="collapsible-body">
+            <span
+              >Lorem ipsum dolor sit amet. Lorem, ipsum dolor sit amet
+              consectetur adipisicing elit. Dignissimos quibusdam eos saepe.
+              Alias soluta non ut voluptatum, hic nam et error? Tenetur libero
+              cumque doloribus, saepe ipsam nesciunt quisquam blanditiis.</span
+            >
+          </div>
+        </li>
+        <li>
+          <div class="collapsible-header">
+            <i class="material-icons">place</i>Second
+          </div>
+          <div class="collapsible-body">
+            <span
+              >Lorem ipsum dolor sit amet. Lorem ipsum dolor sit amet
+              consectetur adipisicing elit. Amet fugit ipsam hic commodi
+              voluptatum repudiandae voluptates corrupti, obcaecati error ad
+              eius natus incidunt? Itaque veniam dicta provident officia eaque
+              recusandae?</span
+            >
+          </div>
+        </li>
+        <li>
+          <div class="collapsible-header">
+            <i class="material-icons">whatshot</i>Third
+          </div>
+          <div class="collapsible-body">
+            <span
+              >Lorem ipsum dolor sit amet. Lorem ipsum dolor sit amet
+              consectetur adipisicing elit. Adipisci, deleniti delectus totam
+              ullam id saepe quae optio illum autem, aut, repellat voluptatum
+              laborum nostrum tempore asperiores nemo voluptate beatae
+              officia.</span
+            >
+          </div>
+        </li>
+      </ul>
+
+      <div class="row center-align white-text">
+        <div class="col red s12"><p>s12</p></div>
+        <div class="col green s12 m4 l2"><p>s12 m4</p></div>
+        <div class="col green s12 m4 l8"><p>s12 m4</p></div>
+        <div class="col green s12 m4 l2"><p>s12 m4</p></div>
+      </div>
+
+      <div class="row center-align white-text">
+        <div class="col blue s12 m6 l3"><p>s12 m6 l3</p></div>
+        <div class="col blue m6 l3"><p>s12 m6 l3</p></div>
+        <div class="col blue m6 l3"><p>s12 m6 l3</p></div>
+        <div class="col blue m6 l3"><p>s12 m6 l3</p></div>
+      </div>
+    </div>
+
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/js/materialize.min.js"></script>
+
+    <script>
+      document.addEventListener("DOMContentLoaded", function () {
+        var elems = document.querySelectorAll(".collapsible");
+        var instances = M.Collapsible.init(elems);
+      });
+    </script>
+  </body>
+</html>
